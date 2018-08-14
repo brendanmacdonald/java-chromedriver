@@ -7,10 +7,6 @@ Valid values for <BROWSER>:
 - FIREFOX_MAX
 - MOBILE360x640
   
-Valid values for <BOOLEAN>:
-- TRUE
-- FALSE
-
 E.g. 
 ```
 mvn clean test -Dbrowser=CHROME_HEADLESS
