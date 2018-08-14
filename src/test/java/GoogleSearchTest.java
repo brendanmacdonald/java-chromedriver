@@ -9,9 +9,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -32,9 +29,9 @@ public class GoogleSearchTest {
     @Test
     public void search() {
         driver.get("http://www.google.com");
-        WebElement searchBox = driver.findElement(By.name("q"));
-        searchBox.sendKeys("ChromeDriver");
-        searchBox.submit();
+        By searchBox = gsp.getSearchBox();
+        driver.findElement(searchBox).sendKeys("ChromeDriver");
+        driver.findElement(searchBox).submit();
         pu.waitForWebElementToBeClickable(driver, gsp.getLogo());
         Assert.assertEquals("ChromeDriver - Google Search", driver.getTitle());
     }
