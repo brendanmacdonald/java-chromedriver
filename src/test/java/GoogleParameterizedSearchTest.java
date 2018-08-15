@@ -1,7 +1,7 @@
-import Model.Config;
+import Utils.Config;
 import Model.GoogleSearchPage;
 import Utils.ConfigHelper;
-import Utils.PageUtils;
+import Model.PageUtils;
 import Utils.WebdriverHelper;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;

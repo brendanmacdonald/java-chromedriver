@@ -1,12 +1,10 @@
-import Model.Config;
+import Utils.Config;
 import Model.GoogleSearchPage;
 import Utils.ConfigHelper;
-import Utils.PageUtils;
+import Model.PageUtils;
 import Utils.WebdriverHelper;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

@@ -1,6 +1,5 @@
 package Utils;
 
-import Model.Config;
 import Utils.WebdriverHelper.BrowserType;
 
 public class ConfigHelper {
