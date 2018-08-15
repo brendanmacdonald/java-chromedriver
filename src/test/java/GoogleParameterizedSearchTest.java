@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DisplayName("Google Tests")
-public class GoogleParemeterizedSearchTest {
+public class GoogleParameterizedSearchTest {
 
     private static WebDriver driver;
     private Config config;
