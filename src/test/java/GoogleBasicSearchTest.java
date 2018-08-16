@@ -39,19 +39,19 @@ public class GoogleBasicSearchTest {
     }
 
 
-    @Step
+   // @Step
     public void openBaseURL() {
         driver.get(gsp.getUrl());
     }
 
-    @Step
+    //@Step
     public void enterSearchParam(String param){
         By searchBox = gsp.getSearchBox();
         driver.findElement(searchBox).sendKeys(param);
     }
 
 
-    @Step
+    //@Step
     public void pressSearchBtn() {
         By btn = gsp.getBtn();
         driver.findElement(btn).click();
@@ -65,7 +65,7 @@ public class GoogleBasicSearchTest {
         enterSearchParam("cheese");
         pressSearchBtn();
         pu.waitForWebElementToBeClickable(driver, gsp.getLogo());
-        assertEquals("ChromeDriver - Google Search", driver.getTitle());
+        assertEquals("cheese - Google Search", driver.getTitle());
     }
 
     @AfterEach

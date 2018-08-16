@@ -2,3 +2,4 @@
 javachromedriver.iml
 target
 ajcore*.txt
+.allure

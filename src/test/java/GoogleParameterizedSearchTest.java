@@ -35,8 +35,8 @@ public class GoogleParameterizedSearchTest {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    @ParameterizedTest
-    @ValueSource(strings = { "racecar", "radar", "cheese" })
+    @ParameterizedTest(name = "Run #{index} with [{arguments}]")
+    @ValueSource(strings = {"mobile", "radar", "cheese"})
     void search(String value) {
         driver.get(gsp.getUrl());
         By searchBox = gsp.getSearchBox();
